@@ -61,3 +61,21 @@ const handleNoteSave = function() {
     getAndRenderNotes();
     renderActiveNote();
 }
+
+// Delete the click note
+const handleNoteDelete = function(event) {
+    // prevents the click listener for the list from being called when the btn inside of it is clicked
+    event.stopPropagation();
+
+    const note = $(this).data('id');
+
+    if (activeNote.id === note) {
+        activeNote = {};
+    }
+
+    deleteNote(note)
+    getAndRenderNotes();
+    renderActiveNote();
+};
+
+//
