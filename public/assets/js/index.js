@@ -83,3 +83,12 @@ const handleNoteView = function() {
     activeNote = $(this).data();
     renderActiveNote();
 };
+
+// Set the activeNote to and empty object and allos the user to enter a new note
+const handleNewNoteView = function() {
+    if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
+        $saveNotebtn.hide();
+    } else {
+        $saveNotebtn.show();
+    }
+};
