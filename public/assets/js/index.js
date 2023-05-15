@@ -25,3 +25,11 @@ const saveNote = function(note) {
     });
 };
 
+// A function for deleting a note from the db
+const deleteNote = function(id) {
+    return $.ajax({
+        url: "api/notes/" + id,
+        method: "DELETE"
+    })
+};
+
