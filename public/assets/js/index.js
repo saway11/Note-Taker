@@ -33,3 +33,20 @@ const deleteNote = function(id) {
     })
 };
 
+// If there is an activeNote, display it, otherwise render empty inputs
+const renderActiveNote = function() {
+    $saveNotebtn.hide();
+
+    if (typeof activeNote.id === "number") {
+        $noteTitle.attr("readonly", true);
+        $noteText.attr("readonly", true);
+        $noteTitle.val(activeNote.title);
+        $noteText.val(activeNote.text);
+    } else {
+        $noteTitle.attr("readonly", false);
+        $noteText.attr("readonly", false);
+        $noteTitle.val("");
+        $noteText.val("");
+    }
+};
+
