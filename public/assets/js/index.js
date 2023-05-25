@@ -128,3 +128,15 @@ var getAndRenderNotes = function() {
         renderNoteList(data);
     });
 };
+
+
+// jQuery to handle different events on the note-taker website
+$saveNotebtn.on("click", handleNoteSave);
+$noteList.om("click", "list-group-item", handleNoteView);
+$newNoteBtn.on("click", handleNewNoteView);
+$noteList.on("click", ".delete-note", handleNoteDelete);
+$noteTitle.on("keyup", handleRenderSaveBtn);
+$noteText.on("keyup", handleRenderSaveBtn);
+
+// Get and render the initial list of notes
+getAndRenderNotes();
