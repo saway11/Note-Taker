@@ -2,15 +2,26 @@
   "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-icons": "^1.10.5",
-    "dotenv": "^16.0.3"
-  }
+    "express": "^4.17.1",
+    "uniqid": "^5.4.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saway11/Note-Taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saway11/Note-Taker.git/issues"
+  },
+  "homepage": "https://github.com/saway11/Note-Taker#readme"
 }

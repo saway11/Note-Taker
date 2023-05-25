@@ -9,7 +9,7 @@ router.get("/notes", (req, res) => {
 })
 
 router.post("/notes", (req, res) => {
-    // set id randomly
+    //set id randomly
     req.body.id = uniqid()
     const note = createNewNote(req.body, notes)
     res.json(note);
@@ -21,10 +21,11 @@ router.delete("/notes/:id", (req, res) => {
     for (let i = 0; i < notes.length; i++) {
         if (notes[i].id === idDeleted) {
             notes.splice(i, 1)
-        }
-    }
+        } 
+    } 
 
     updateDb(notes);
 });
+
 
 module.exports = router;
