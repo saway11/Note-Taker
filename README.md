@@ -20,6 +20,9 @@ and hit save. The list of notes will appear on the left side. If you would like 
 the note, the back end functionality has been added. When the delete button is clicked and
 the page is refreshed, the deleted note will not appear.
 # Screenshot
+![](./assets/images/Screenshot%20(26).png)
+![](./assets/images/Screenshot%20(27).png)
+![](./assets/images/Screenshot%20(28).png)
 # License
 This project is licensed under the MIT license. To learn more please visit https://choosealicense.com/licenses/mit.
 # Contributing

@@ -1,28 +1,78 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "![License](https://img.shields.io/badge/license-MIT-blue.svg)\r # Description\r Created a Note Taker application that can be used to write and save\r notes. This application will use an Express.js back end and will save\r and retrieve note data from a JSON file.\r # Table of Contents\r - [Installation](#installation)\r - [Usage](#usage)\r - [Screenshot](#screenshot)\r - [Contributing](#contributing)\r - [License](#license)\r - [Test](#tests)\r - [Questions](#questions)\r # Installation\r Clone repo run npm install and npm i uniqid\r # Usage\r The user can write and save notes and reminders. Enter a note title and a note body\r and hit save. The list of notes will appear on the left side. If you would like to delete\r the note, the back end functionality has been added. When the delete button is clicked and\r the page is refreshed, the deleted note will not appear.\r # Screenshot\r # License\r This project is licensed under the MIT license. To learn more please visit https://choosealicense.com/licenses/mit.\r # Contributing\r UC Berkeley Coding Bootcamp, ChatGBT, Google, Youtube\r # Test\r Open terminal and run node\r # Questions\r If any questions arise regarding the repository, open an issue or contact me directly at rgarcia20.m@gmail.com. Additional source where my work can be viewed is in saway11.",
   "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "accepts": "^1.3.8",
+    "array-flatten": "^1.1.1",
+    "body-parser": "^1.20.1",
+    "bytes": "^3.1.2",
+    "call-bind": "^1.0.2",
+    "content-disposition": "^0.5.4",
+    "content-type": "^1.0.5",
+    "cookie": "^0.5.0",
+    "cookie-signature": "^1.0.6",
+    "debug": "^2.6.9",
+    "depd": "^2.0.0",
+    "destroy": "^1.2.0",
+    "dotenv": "^16.0.3",
+    "ee-first": "^1.1.1",
+    "encodeurl": "^1.0.2",
+    "escape-html": "^1.0.3",
+    "etag": "^1.8.1",
+    "express": "^4.18.2",
+    "finalhandler": "^1.2.0",
+    "forwarded": "^0.2.0",
+    "fresh": "^0.5.2",
+    "function-bind": "^1.1.1",
+    "get-intrinsic": "^1.2.1",
+    "has": "^1.0.3",
+    "has-proto": "^1.0.1",
+    "has-symbols": "^1.0.3",
+    "http-errors": "^2.0.0",
+    "iconv-lite": "^0.4.24",
+    "inherits": "^2.0.4",
+    "ipaddr.js": "^1.9.1",
+    "media-typer": "^0.3.0",
+    "merge-descriptors": "^1.0.1",
+    "methods": "^1.1.2",
+    "mime": "^1.6.0",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "ms": "^2.0.0",
+    "negotiator": "^0.6.3",
+    "object-inspect": "^1.12.3",
+    "on-finished": "^2.4.1",
+    "parseurl": "^1.3.3",
+    "path-to-regexp": "^0.1.7",
+    "proxy-addr": "^2.0.7",
+    "qs": "^6.11.0",
+    "range-parser": "^1.2.1",
+    "raw-body": "^2.5.1",
+    "safe-buffer": "^5.2.1",
+    "safer-buffer": "^2.1.2",
+    "send": "^0.18.0",
+    "serve-static": "^1.15.0",
+    "setprototypeof": "^1.2.0",
+    "side-channel": "^1.0.4",
+    "statuses": "^2.0.1",
+    "toidentifier": "^1.0.1",
+    "type-is": "^1.6.18",
+    "uniqid": "^5.4.0",
+    "unpipe": "^1.0.0",
+    "utils-merge": "^1.0.1",
+    "vary": "^1.1.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "uniqid": "^5.4.0"
-  },
-  "directories": {
-    "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/saway11/Note-Taker.git"
-  },
-  "bugs": {
-    "url": "https://github.com/saway11/Note-Taker.git/issues"
-  },
-  "homepage": "https://github.com/saway11/Note-Taker#readme"
+  "license": "ISC"
 }
